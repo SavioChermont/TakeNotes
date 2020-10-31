@@ -19,7 +19,8 @@ Esse é um pequeno projeto em react para fazer anotações.
 <h4> Single Screen </h4>
 <span> Create, preview and display new notes </span>
 
-![image](https://user-images.githubusercontent.com/45010175/97769078-b1b33e80-1b06-11eb-9a27-88ebf6b75e95.png)
+![image](https://user-images.githubusercontent.com/45010175/97769111-f50dad00-1b06-11eb-8488-3516f6485e43.png)
+
 
 
 
