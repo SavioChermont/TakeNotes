@@ -1,0 +1,16 @@
+.notas-container {
+  padding: 12px 12px;
+}
+
+.nota-container {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 10px;
+  flex-direction: column;
+  background-color: orangered;
+}
+
+.nota-titulo {
+  border-bottom: 2px solid white;
+  margin-bottom: 5px;
+}
