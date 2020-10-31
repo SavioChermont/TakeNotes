@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/Form.css";
 
 class Form extends React.Component {
   state = {
@@ -11,36 +12,41 @@ class Form extends React.Component {
     const name = e.target.name;
 
     this.setState({ [name]: value });
-    console.log(this.state);
+
+    this.props.showPreview(name, value);
   };
 
   formSubmit = (e) => {
     e.preventDefault();
-    console.log("submit");
     this.props.onFormSubmit(this.state);
   };
 
   render() {
     return (
       <div>
-        <form onSubmit={this.formSubmit}>
+        <form onSubmit={this.formSubmit} className="form-container">
           <label> TITLE </label>
           <input
             type="text"
+            placeholder="Titulo"
             value={this.state.titulo}
             name="titulo"
             onChange={this.handleInputChange}
           />
 
           <label> CONTEUDO </label>
-          <input
+          <textarea
             type="text"
+            placeholder="Conteudo"
             name="conteudo"
             value={this.state.conteudo}
             onChange={this.handleInputChange}
           />
 
-          <input type="submit" />
+          <button type="submit" className="submit">
+            {" "}
+            Adicionar Nota{" "}
+          </button>
         </form>
       </div>
     );
